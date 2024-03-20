@@ -67,4 +67,4 @@ foreach($row in $histraw.obs)
    $object | Add-Member -Name 'precipatype' -MemberType Noteproperty -Value $row[21]
    $newRow += $object
 }
-   $newRow | Export-Csv -Path $path"\TempestHist.csv" -Append -NoTypeInformation
+$newRow | Export-Csv -Path $path"\TempestHist.csv" -Append -NoTypeInformation
